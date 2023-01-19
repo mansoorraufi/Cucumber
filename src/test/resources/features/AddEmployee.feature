@@ -1,4 +1,5 @@
 Feature: Add Employee
+
   Background:
     # Given user is navigated to HRMS application
     When user enters valid username and valid password
@@ -19,7 +20,6 @@ Feature: Add Employee
     And user clicks on save button
     Then employee added successfully
 
-
   @outline
   Scenario Outline: Adding multiple employees using feature file
     And user enter "<firstName>" and "<lastName>" for adding multiple employees
@@ -31,7 +31,6 @@ Feature: Add Employee
       |rampal     |chambel   |
       |azam       |asel      |
 
-
   @datatable
   Scenario: Adding multiple employees using data table
     When user adds multiple employees and verify they are added successfully
@@ -40,5 +39,17 @@ Feature: Add Employee
       |birgul  |MS        |ozgin     |
       |alina   |MS        |bob       |
 
+
+  @excel
+  Scenario: Adding multiple employees using excel file
+    When user adds multiple employee from excel using "EmployeeData" and verify it
+
+
+  @db @regression
+  Scenario: Adding employee and verifying it is stored in database
+    And user enter "Fraidoon" and "Rasuli"
+    And user captures employee id
+    And user clicks on save button
+    And added employee is displayed in database
 
 

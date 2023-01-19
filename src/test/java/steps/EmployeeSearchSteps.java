@@ -39,6 +39,6 @@ public class EmployeeSearchSteps extends CommonMethods {
     public void user_enters_valid_employee_name() {
         // WebElement searchNameField = driver.findElement(By.id("empsearch_employee_name_empName"));
         // sendText(searchNameField, "dawggy");
-        sendText(employeeList.empSearchNameField, "ms");
+        sendText(employeeList.empSearchNameField, "Mansoor");
     }
 }

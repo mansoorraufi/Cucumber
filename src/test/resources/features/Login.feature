@@ -21,7 +21,6 @@ Feature: Login functionality
     And user clicks on login button
     Then error message displayed
 
-
   @tc1105
   Scenario Outline: Invalid login functionality
     When user enters different "<username>" and "<password>" and verify the "<error>" for it
@@ -31,3 +30,4 @@ Feature: Login functionality
       |ronaldo   |Hum@nhrm123|Invalid credentials|
       |          |Hum@nhrm123|Username cannot be empty|
       |admin     |           |Password cannot be empty|
+

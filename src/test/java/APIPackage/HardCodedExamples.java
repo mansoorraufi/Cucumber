@@ -23,7 +23,7 @@ public class HardCodedExamples {
     String baseURI = RestAssured.baseURI = "http://hrm.syntaxtechs.net/syntaxapi/api";
 
     // we need to perform CURD operation
-    String token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQwODAyODQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDEyMzQ4NCwidXNlcklkIjoiNDc1NiJ9.YBrGjEIhFrhBul8KSHMOpFoEAgot2jlofha6LyJdTVo";
+    String token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQzMTc2NjgsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDM2MDg2OCwidXNlcklkIjoiNDc1NiJ9.-pkDaXC53VrbQyXG8AqXB3I-cAwMrX1FYwcsdTpm9io";
   static   String employee_id;
 
     @Test
